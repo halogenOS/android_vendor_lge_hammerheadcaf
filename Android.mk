@@ -102,4 +102,14 @@ LOCAL_MODULE_SUFFIX := .so
 LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
+include $(CLEAR_VARS)
+LOCAL_MODULE := mark.via.gp
+LOCAL_MODULE_TAGS := optional
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_SRC_FILES := proprietary/app/mark.via.gp/mark.via.gp.apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_OVERRIDES_PACKAGES := Browser
+include $(BUILD_PREBUILT)
+
 endif
