@@ -246,4 +246,5 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libmm-abl \
-    libuiblur
+    libuiblur \
+    mark.via.gp
